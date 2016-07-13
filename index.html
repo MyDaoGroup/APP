@@ -15,7 +15,6 @@ if(x.isFunction(n))while(r=o[i++])"+"===r[0]?(r=r.slice(1)||"*",(e[r]=e[r]||[]).
 	</script>
 	<script type="text/javascript">
 	$(document).ready(function(){
-		alert("22")
             var browser = {
                 versions: function() {
                     var u = navigator.userAgent, app = navigator.appVersion;
@@ -34,15 +33,13 @@ if(x.isFunction(n))while(r=o[i++])"+"===r[0]?(r=r.slice(1)||"*",(e[r]=e[r]||[]).
                 }()
             }
             if(browser.versions.ios || browser.versions.iPhone || browser.versions.iPad){
-            	alert(1)
 							$(".icon").css("background","url(https://raw.githubusercontent.com/MyDaoGroup/APP/gh-pages/apple.png)");
 							$(".download-box-nav a").attr("href","https://raw.githubusercontent.com/MagicCoderShow/MyDao/gh-pages/manifest.plist");
             }else if(browser.versions.android){
-            	alert(2)
 							$(".icon").css("background","url(https://raw.githubusercontent.com/MyDaoGroup/APP/gh-pages/android.png)");
 							$(".download-box-nav a").attr("href","https://raw.githubusercontent.com/MagicCoderShow/MyDao/gh-pages/android.apk");
 		        }else{
-		        	alert(3)	
+		        	alert("请使用手机浏览器访问")	
 		        };
         })
 	</script>
