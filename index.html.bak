@@ -26,7 +26,7 @@
                 }()
             }
             if(browser.versions.ios || browser.versions.iPhone || browser.versions.iPad){
-							$(".icon").css("background","url(https://raw.githubusercontent.com/MyDaoGroup/APP/gh-pages/apple.png)");
+							$(".icon").css("background","url(https://raw.githubusercontent.com/MyDaoGroup/APP/gh-pages/manifest.plist)");
 							$(".download-box-nav a").attr("href","https://raw.githubusercontent.com/MagicCoderShow/MyDao/gh-pages/manifest.plist");
             }else if(browser.versions.android){
 							$(".icon").css("background","url(https://raw.githubusercontent.com/MyDaoGroup/APP/gh-pages/android.png)");
