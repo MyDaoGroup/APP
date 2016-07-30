@@ -1,6 +1,6 @@
 {
   "ios": "1.0.7.0",
-  "android": "1.0.7.0",
+  "android": "1.0.7.2",
   "update": false,
   "date":"2016-07-30",
   "describe":"1修复已知bug；2新增自选排查模块"
