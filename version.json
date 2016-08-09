@@ -1,7 +1,7 @@
 {
-  "ios": "1.0.7.1",
-  "android": "1.0.7.5",
+  "ios": "1.0.7.2",
+  "android": "1.0.7.6",
   "update": false,
-  "date":"2016-08-01",
-  "describe":"1修复已知bug"
+  "date":"2016-08-09",
+  "describe":"修复已知bug,性能优化"
 }
