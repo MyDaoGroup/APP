@@ -6,10 +6,370 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="Keywords" content="科技让生产更安全"/>
 		<meta name="Description" content="科技让生产更安全"/>
-		<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
 		<link rel="shortcut icon" href="favicon.ico" />
 		<link rel="bookmark" href="favicon.ico" type="image/x-icon"　/>
 		<title>安质保</title>
+		<style type="text/css">
+			/*!
+ * Bootstrap v3.3.0 (http://getbootstrap.com)
+ * Copyright 2011-2014 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ *//*! normalize.css v3.0.2 | MIT License | git.io/normalize */html {
+	font-family: sans-serif;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%
+}
+
+body {
+	margin: 0
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary {
+	display: block
+}
+
+audio,canvas,progress,video {
+	display: inline-block;
+	vertical-align: baseline
+}
+
+audio:not([controls]) {
+	display: none;
+	height: 0
+}[hidden],template {
+	display: none
+}
+
+a {
+	background-color: transparent
+}
+
+a:active,a:hover {
+	outline: 0
+}
+
+abbr[title] {
+	border-bottom: 1px dotted
+}
+
+b,strong {
+	font-weight: 700
+}
+
+dfn {
+	font-style: italic
+}
+
+h1 {
+	margin: .67em 0;
+	font-size: 2em
+}
+
+mark {
+	color: #000;
+	background: #ff0
+}
+
+small {
+	font-size: 80%
+}
+
+sub,sup {
+	position: relative;
+	font-size: 75%;
+	line-height: 0;
+	vertical-align: baseline
+}
+
+sup {
+	top: -.5em
+}
+
+sub {
+	bottom: -.25em
+}
+
+img {
+	border: 0
+}
+
+svg:not(:root) {
+	overflow: hidden
+}
+
+figure {
+	margin: 1em 40px
+}
+
+hr {
+	height: 0;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box
+}
+
+pre {
+	overflow: auto
+}
+
+code,kbd,pre,samp {
+	font-family: monospace,monospace;
+	font-size: 1em
+}
+
+button,input,optgroup,select,textarea {
+	margin: 0;
+	font: inherit;
+	color: inherit
+}
+
+button {
+	overflow: visible
+}
+
+button,select {
+	text-transform: none
+}
+
+button,html input[type=button],input[type=reset],input[type=submit] {
+	-webkit-appearance: button;
+	cursor: pointer
+}
+
+button[disabled],html input[disabled] {
+	cursor: default
+}
+
+button::-moz-focus-inner,input::-moz-focus-inner {
+	padding: 0;
+	border: 0
+}
+
+input {
+	line-height: normal
+}
+
+input[type=checkbox],input[type=radio] {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0
+}
+
+input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button {
+	height: auto
+}
+
+input[type=search] {
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	-webkit-appearance: textfield
+}
+
+input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration {
+	-webkit-appearance: none
+}
+
+fieldset {
+	padding: .35em .625em .75em;
+	margin: 0 2px;
+	border: 1px solid silver
+}
+
+legend {
+	padding: 0;
+	border: 0
+}
+
+textarea {
+	overflow: auto
+}
+
+optgroup {
+	font-weight: 700
+}
+
+table {
+	border-spacing: 0;
+	border-collapse: collapse
+}
+
+
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
+}
+
+:before,:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
+}
+
+html {
+	font-size: 10px;
+	-webkit-tap-highlight-color: rgba(0,0,0,0)
+}
+
+body {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #333;
+	background-color: #fff
+}
+
+input,button,select,textarea {
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit
+}
+
+a {
+	color: #428bca;
+	text-decoration: none
+}
+
+a:hover,a:focus {
+	color: #2a6496;
+	text-decoration: underline
+}
+
+a:focus {
+	outline: thin dotted;
+	outline: 5px auto -webkit-focus-ring-color;
+	outline-offset: -2px
+}
+
+figure {
+	margin: 0
+}
+
+img {
+	vertical-align: middle
+}
+
+.img-responsive,.thumbnail>img,.thumbnail a>img,.carousel-inner>.item>img,.carousel-inner>.item>a>img {
+	display: block;
+	max-width: 100%;
+	height: auto
+}
+
+.img-rounded {
+	border-radius: 6px
+}
+
+.img-thumbnail {
+	display: inline-block;
+	max-width: 100%;
+	height: auto;
+	padding: 4px;
+	line-height: 1.42857143;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	-webkit-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out
+}
+
+.img-circle {
+	border-radius: 50%
+}
+
+hr {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: 0;
+	border-top: 1px solid #eee
+}
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0,0,0,0);
+	border: 0
+}
+
+.sr-only-focusable:active,.sr-only-focusable:focus {
+	position: static;
+	width: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	clip: auto
+}
+
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
+	font-family: inherit;
+	font-weight: 500;
+	line-height: 1.1;
+	color: inherit
+}
+
+h1 small,h2 small,h3 small,h4 small,h5 small,h6 small,.h1 small,.h2 small,.h3 small,.h4 small,.h5 small,.h6 small,h1 .small,h2 .small,h3 .small,h4 .small,h5 .small,h6 .small,.h1 .small,.h2 .small,.h3 .small,.h4 .small,.h5 .small,.h6 .small {
+	font-weight: 400;
+	line-height: 1;
+	color: #777
+}
+
+h1,.h1,h2,.h2,h3,.h3 {
+	margin-top: 20px;
+	margin-bottom: 10px
+}
+
+h1 small,.h1 small,h2 small,.h2 small,h3 small,.h3 small,h1 .small,.h1 .small,h2 .small,.h2 .small,h3 .small,.h3 .small {
+	font-size: 65%
+}
+
+h4,.h4,h5,.h5,h6,.h6 {
+	margin-top: 10px;
+	margin-bottom: 10px
+}
+
+h4 small,.h4 small,h5 small,.h5 small,h6 small,.h6 small,h4 .small,.h4 .small,h5 .small,.h5 .small,h6 .small,.h6 .small {
+	font-size: 75%
+}
+
+h1,.h1 {
+	font-size: 36px
+}
+
+h2,.h2 {
+	font-size: 30px
+}
+
+h3,.h3 {
+	font-size: 24px
+}
+
+h4,.h4 {
+	font-size: 18px
+}
+
+h5,.h5 {
+	font-size: 14px
+}
+
+h6,.h6 {
+	font-size: 12px
+}
+
+p {
+	margin: 0 0 10px
+}
+
+
+
+
+		</style>
 		<style type="text/css">
 			#content{
 				padding: 20px 8px;
@@ -63,16 +423,16 @@
 				float: right;
 			}
 			.img-box .m-text-img .item1 i{
-				background: url(img/10.png) no-repeat;
+				background: url(https://raw.githubusercontent.com/MyDaoGroup/APP/gh-pages/share/img/10.png) no-repeat;
 				background-size: 26px 26px;
 				
 			}
 			.img-box .m-text-img .item2 i{
-				background: url(img/11.png) no-repeat;
+				background: url(https://raw.githubusercontent.com/MyDaoGroup/APP/gh-pages/share/img/11.png) no-repeat;
 				background-size: 26px 26px;
 			}
 			.img-box .m-text-img .item3 i{
-				background: url(img/12.png) no-repeat;
+				background: url(https://raw.githubusercontent.com/MyDaoGroup/APP/gh-pages/share/img/12.png) no-repeat;
 				background-size: 26px 26px;
 			}
 			
@@ -109,21 +469,21 @@
 	</head>
 	<body>
 		<div id='wx_logo' style='margin:0 auto;display:none;'>
-			<img src='img/13.png' />
+			<img src='https://raw.githubusercontent.com/MyDaoGroup/APP/gh-pages/share/img/13.png' />
 		</div>
 		<div id="content">
-			<div class="img-box"><img src="img/1.png"/></div>
+			<div class="img-box"><img src="https://raw.githubusercontent.com/MyDaoGroup/APP/gh-pages/share/img/1.png"/></div>
 			<div class="text-box">
 				<p>聚焦生产作业层的安全生产与监督管理，<br/>以作业驱动为核心</p>
 				<p>责任落实、制度落地<br/>效率提升、管理规范<br/>决策科学、成本降低</p>
 			</div>
-			<div class="img-box"><img src="img/2.png" style="width: 86%;"/></div>
+			<div class="img-box"><img src="https://raw.githubusercontent.com/MyDaoGroup/APP/gh-pages/share/img/2.png" style="width: 86%;"/></div>
 			<p class="line"></p>
 			<div class="img-box">
 				<p class="text-left title">1. 解决管理困惑</p>
 				<div class="m-text-img">
 					<p class="text-left">安质保能够为您解决在安全生产与监督管理中遇到很多困惑</p>
-					<img src="img/3.png"/>
+					<img src="https://raw.githubusercontent.com/MyDaoGroup/APP/gh-pages/share/img/3.png"/>
 				</div>
 			</div>
 			<div class="img-box">
@@ -133,7 +493,7 @@
 						通过移动化场景式的功能设计，全面提升安全管理效能的同时，让安全管理实现：
 						<span style="display: block;text-align: center;">目标可量、源头可溯<br/>过程可控、结果可视<br/>趋势可测、绩效可评</span>
 					</p>
-					<img src="img/4.png" />
+					<img src="https://raw.githubusercontent.com/MyDaoGroup/APP/gh-pages/share/img/4.png" />
 				</div>
 			</div>
 			<div class="img-box">
@@ -142,7 +502,7 @@
 					<p class="text-left">
 						围绕“安全管理四大清单”，落实一岗双责、党政同责、齐抓共管的安全生产责任制。
 					</p>
-					<img src="img/5.png" />
+					<img src="https://raw.githubusercontent.com/MyDaoGroup/APP/gh-pages/share/img/5.png" />
 				</div>
 			</div>
 			<div class="img-box">
@@ -153,21 +513,21 @@
 						先进易用、稳定可靠<br/>
 						经济实用、灵活安全<br/>
 					</p>
-					<img src="img/6.png" />
+					<img src="https://raw.githubusercontent.com/MyDaoGroup/APP/gh-pages/share/img/6.png" />
 				</div>
 			</div>
 			<div class="img-box">
 				<p class="text-left title">5. 客户价值</p>
 				<div class="m-text-img">
 					<p class="text-left">能够让您安全生产管理更有成效、更加规范、更加科学、更加经济。</p>
-					<img src="img/7.png" />
+					<img src="https://raw.githubusercontent.com/MyDaoGroup/APP/gh-pages/share/img/7.png" />
 				</div>
 			</div>
-			<div class="img-box"><img src="img/8.png"/></div>
+			<div class="img-box"><img src="https://raw.githubusercontent.com/MyDaoGroup/APP/gh-pages/share/img/8.png"/></div>
 			<div class="text-box">
 				<p>想要了解更多信息，请扫描二维码后联系我们。</p>
 			</div>
-			<div class="img-box"><img src="img/9.png" style="width: 40%;"/></div>
+			<div class="img-box"><img src="https://raw.githubusercontent.com/MyDaoGroup/APP/gh-pages/share/img/9.png" style="width: 40%;"/></div>
 			<div class="img-box img-box-bor">
 				<div class="m-text-img">
 					<span class="item item1"><i></i>010-85728018</span>
