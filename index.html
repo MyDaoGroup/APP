@@ -127,6 +127,10 @@ if(x.isFunction(n))while(r=o[i++])"+"===r[0]?(r=r.slice(1)||"*",(e[r]=e[r]||[]).
 	    font-weight: 300;
 	    letter-spacing: 1.2px;
 	}
+
+	.weixin-tip{display: none; position: fixed; left:0; top:0; bottom:0; background: rgba(0,0,0,0.8); filter:alpha(opacity=80);  height: 100%; width: 100%; z-index: 100;}
+	.weixin-tip img{max-width: 100%; height: auto;}
+	.weixin-tip p{text-align: center; margin-top: 10%; padding:0 5%;}
 	</style>
 	<body>
 		<div class="download-main">
@@ -144,5 +148,28 @@ if(x.isFunction(n))while(r=o[i++])"+"===r[0]?(r=r.slice(1)||"*",(e[r]=e[r]||[]).
 					<p>更新于 2016-09-29</p>
 				</div>
 		</div>
+		<div class="weixin-tip">
+			<p>
+				<img src="https://mydaogroup.github.io/APP/weixin.png" alt="微信打开"/>
+			</p>
+		</div>
+		<script type="text/javascript">
+	        $(window).on("load",function(){
+		        var winHeight = $(window).height();
+				function is_weixin() {
+				    var ua = navigator.userAgent.toLowerCase();
+				    if (ua.match(/MicroMessenger/i) == "micromessenger") {
+				        return true;
+				    } else {
+				        return false;
+				    }
+				}
+				var isWeixin = is_weixin();
+				if(isWeixin){
+					$(".weixin-tip").css("height",winHeight);
+		            $(".weixin-tip").show();
+				}
+	        })
+		</script>
 	</body>
 </html>
